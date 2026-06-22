@@ -20,7 +20,7 @@ const CartPage = lazy(() => import('./components/Pages/CartPage'))
 const Checkout = lazy(() => import('./components/Pages/Checkout'))
 const ContactUs = lazy(() => import('./components/Pages/ContactUs'))
 const OrderSuccess = lazy(() => import('./components/Pages/OrderSuccess'))
-const Page404 = lazy(() => import('./components/Pages/page404'))
+const Page404 = lazy(() => import('./components/Pages/Page404'))
 
 /* USER AUTH */
 const Register = lazy(() => import('./components/Auth/Register'))
