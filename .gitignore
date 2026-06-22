@@ -1,0 +1,26 @@
+# Frontend
+reactjs/node_modules
+reactjs/dist
+reactjs/.env
+reactjs/.env.*
+
+# Backend
+backend/node_modules
+backend/.env
+backend/.env.*
+
+# Logs
+*.log
+logs
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode
+.idea
+
+# Build
+build
+coverage

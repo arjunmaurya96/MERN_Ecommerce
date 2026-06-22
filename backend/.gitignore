@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Uploads (Multer)
+uploads/
+temp/
+tmp/
+
+# Coverage
+coverage
+
+# Cache
+.cache
+.eslintcache
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Misc
+*.local
