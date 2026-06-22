@@ -60,7 +60,7 @@ const Login = () => {
                 Login to your account
               </p>
 
-              {/* 🔵 GOOGLE LOGIN BUTTON */}
+              {/*  GOOGLE LOGIN BUTTON */}
 
               <GoogleLogin
                 onSuccess={async (credentialResponse) => {
