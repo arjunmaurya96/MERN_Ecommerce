@@ -20,7 +20,7 @@ const AdminLogin = () => {
   const AdminSubmitData = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/admin/login-admin", formData)
+      const response = await axios.post("https://mern-ecommerce-zt4z.onrender.com/api/admin/login-admin", formData)
 
       console.log("my data iiii", response)
       toast.success(response?.data?.message)

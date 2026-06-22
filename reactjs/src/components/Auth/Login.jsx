@@ -23,7 +23,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/user-login",
+        "https://mern-ecommerce-zt4z.onrender.com/api/user-login",
         formData
       );
 
@@ -68,7 +68,7 @@ const Login = () => {
 
                   try {
                     const res = await axios.post(
-                      "http://localhost:8080/api/auth/google",
+                      "https://mern-ecommerce-zt4z.onrender.com/api/auth/google",
                       { token }
                     );
 
@@ -222,7 +222,7 @@ export default Login;
 //   const submitLoginData = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post("http://localhost:8080/api/user-login", formData)
+//       const response = await axios.post("https://mern-ecommerce-zt4z.onrender.com/api/user-login", formData)
 //       const token = response.data.token;
 //       localStorage.setItem("token", token)
 //       toast.success(response.data.message)

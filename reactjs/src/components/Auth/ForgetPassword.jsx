@@ -19,7 +19,7 @@ const ForgetPassword = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/forget-password", // ✅ FIXED API
+        "https://mern-ecommerce-zt4z.onrender.com/api/forget-password", // ✅ FIXED API
         { email }
       );
 

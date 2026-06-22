@@ -38,21 +38,21 @@ const Shops = () => {
 
     const fetchProducts = async () => {
         const res = await axios.get(
-            "http://localhost:8080/api/product/get-product"
+            "https://mern-ecommerce-zt4z.onrender.com/api/product/get-product"
         );
         setProducts(res.data.products || []);
     };
 
     const fetchMainCategories = async () => {
         const res = await axios.get(
-            "http://localhost:8080/api/category/get-main-category"
+            "https://mern-ecommerce-zt4z.onrender.com/api/category/get-main-category"
         );
         setMainCategories(res.data.data || []);
     };
 
     const fetchAllCategories = async () => {
         const res = await axios.get(
-            "http://localhost:8080/api/category/get-all-category"
+            "https://mern-ecommerce-zt4z.onrender.com/api/category/get-all-category"
         );
         setAllCategories(res.data.data || []);
     };

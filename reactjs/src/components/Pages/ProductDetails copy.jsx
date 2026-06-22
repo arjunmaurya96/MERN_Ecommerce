@@ -13,7 +13,7 @@ import { useAuth } from "../../context/AuthContext";
 import toast, { Toaster } from "react-hot-toast";
 
 const ProductDetails = () => {
-  const BASE_URL = "http://localhost:8080";
+  const BASE_URL = "https://mern-ecommerce-zt4z.onrender.com";
   const navigate = useNavigate();
   const { addToCart, isAuthenticated, cartItems } = useAuth();
   const { slug } = useParams();

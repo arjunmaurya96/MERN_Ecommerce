@@ -27,8 +27,8 @@ const getImageUrl = (images) => {
   // Legacy plain string URLs
   if (typeof first === "string") {
     if (first.startsWith("http")) return first;
-    if (first.startsWith("/")) return `http://localhost:8080${first}`;
-    return `http://localhost:8080/${first}`;
+    if (first.startsWith("/")) return `https://mern-ecommerce-zt4z.onrender.com${first}`;
+    return `https://mern-ecommerce-zt4z.onrender.com/${first}`;
   }
   return FALLBACK_IMG;
 };

@@ -27,7 +27,7 @@ const AddCategory = () => {
   const getParentCategories = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/category/get-main-category"
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/get-main-category"
       );
 
       setParentCategories(res.data.data);
@@ -59,7 +59,7 @@ const AddCategory = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/category/add-category",
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/add-category",
         payload
       );
 

@@ -15,7 +15,7 @@ const AllUsers = () => {
             const token = localStorage.getItem("adminToken");
 
             const { data } = await axios.get(
-                "http://localhost:8080/api/admin/user/all-user",
+                "https://mern-ecommerce-zt4z.onrender.com/api/admin/user/all-user",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -43,7 +43,7 @@ const AllUsers = () => {
             const token = localStorage.getItem("adminToken");
 
             const { data } = await axios.put(
-                `http://localhost:8080/api/admin/user/block-user/${id}`,
+                `https://mern-ecommerce-zt4z.onrender.com/api/admin/user/block-user/${id}`,
                 { isBlocked: !status },
                 {
                     headers: {

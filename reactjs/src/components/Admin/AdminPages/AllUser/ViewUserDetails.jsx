@@ -12,7 +12,7 @@ const ViewUserDetails = () => {
       const token = localStorage.getItem("adminToken");
 
       const { data } = await axios.get(
-        `http://localhost:8080/api/admin/user/${id}`,
+        `https://mern-ecommerce-zt4z.onrender.com/api/admin/user/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

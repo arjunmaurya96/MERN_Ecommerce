@@ -4,7 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-const API_BASE = "http://localhost:8080/api/product";
+const API_BASE = "https://mern-ecommerce-zt4z.onrender.com/api/product";
 const FALLBACK_IMG = "https://dummyimage.com/60x60/e2e8f0/94a3b8&text=No+Img";
 const FALLBACK_PREVIEW = "https://dummyimage.com/600x600/e2e8f0/94a3b8&text=No+Image";
 

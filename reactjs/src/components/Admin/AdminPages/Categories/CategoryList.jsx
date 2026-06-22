@@ -13,7 +13,7 @@ const CategoryList = () => {
   const getCategories = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/category/get-all-category"
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/get-all-category"
       );
       
 
@@ -42,7 +42,7 @@ const CategoryList = () => {
 
     try {
       const res = await axios.delete(
-        `http://localhost:8080/api/category/delete-category/${id}`
+        `https://mern-ecommerce-zt4z.onrender.com/api/category/delete-category/${id}`
       );
 
       if (res.data.success) {

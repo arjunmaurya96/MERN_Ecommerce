@@ -41,7 +41,7 @@ const AddProduct = () => {
   const getCategories = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/category/get-all-category"
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/get-all-category"
       );
       setCategories(data.data);
     } catch (error) {
@@ -84,7 +84,7 @@ const AddProduct = () => {
       });
 
       const res = await axios.post(
-        "http://localhost:8080/api/product/add-product",
+        "https://mern-ecommerce-zt4z.onrender.com/api/product/add-product",
         data,
         {
           headers: {

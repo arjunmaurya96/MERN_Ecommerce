@@ -43,7 +43,7 @@ const AdminResetPassword = () => {
 
       // 🔥 BACKEND API CALL
       const res = await axios.post(
-        `http://localhost:8080/api/admin/reset-password/${token}`,
+        `https://mern-ecommerce-zt4z.onrender.com/api/admin/reset-password/${token}`,
         { password, confirmPassword },
         {
           headers: {

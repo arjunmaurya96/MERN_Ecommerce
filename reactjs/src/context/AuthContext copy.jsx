@@ -7,7 +7,7 @@ const AuthContext = createContext();
 
 /* ---------- AXIOS INSTANCE ---------- */
 const API = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://mern-ecommerce-zt4z.onrender.com/api",
 });
 
 API.interceptors.request.use((req) => {

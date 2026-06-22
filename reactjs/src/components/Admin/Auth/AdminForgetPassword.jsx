@@ -22,7 +22,7 @@ const AdminForgetPassword = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:8080/api/admin/forget-password",
+        "https://mern-ecommerce-zt4z.onrender.com/api/admin/forget-password",
         { email }
       );
 

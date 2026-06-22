@@ -12,7 +12,7 @@ const UserDashboard = () => {
     const fetchDashboard = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8080/api/dashboard/user/dashboard",
+          "https://mern-ecommerce-zt4z.onrender.com/api/dashboard/user/dashboard",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

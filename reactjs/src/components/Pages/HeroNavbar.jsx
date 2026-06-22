@@ -27,7 +27,7 @@ const HeroNavbar = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        "http://localhost:8080/api/category/get-main-category"
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/get-main-category"
       );
       if (data.success) {
         setCategories(data.data);

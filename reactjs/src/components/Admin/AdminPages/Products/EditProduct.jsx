@@ -27,7 +27,7 @@ const EditProduct = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/product/get-product`
+        `https://mern-ecommerce-zt4z.onrender.com/api/product/get-product`
       );
 
       const product = data.products.find((p) => p._id === id);
@@ -60,7 +60,7 @@ const EditProduct = () => {
   const getCategories = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/category/get-all-category"
+        "https://mern-ecommerce-zt4z.onrender.com/api/category/get-all-category"
       );
       setCategories(data.data);
     } catch (error) {
@@ -120,7 +120,7 @@ const EditProduct = () => {
       });
 
       const res = await axios.put(
-        `http://localhost:8080/api/product/update-product/${id}`,
+        `https://mern-ecommerce-zt4z.onrender.com/api/product/update-product/${id}`,
         data,
         {
           headers: {

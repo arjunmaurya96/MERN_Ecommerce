@@ -18,7 +18,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/user-register",
+        "https://mern-ecommerce-zt4z.onrender.com/api/user-register",
         formData
       );
       toast.success(response.data.message);
